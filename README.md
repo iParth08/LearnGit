@@ -16,3 +16,7 @@ Git provides two prominent features:
  git config --global user.email _"user123@email.com"_
  git config --list
 ```
+**_Basic Commands_**
+Basic terminal commands also works in git
+- **ls** : list down all
+- 
