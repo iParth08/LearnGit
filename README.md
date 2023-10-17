@@ -10,13 +10,13 @@ Git provides two prominent features:
 
 ## Basic Set-up
 
-**_Configuration of Contributor(Editor) :_**
+- **_Configuration of Contributor(Editor) :_**
 ```sh
  git config --global user.name _"User Name"_
  git config --global user.email _"user123@email.com"_
  git config --list
 ```
-**_Working of Git :_**
+- **_Working of Git :_**
 Git stores all the history (snapshots) and track every changes being made. <br>
 All these are stored in a hidden {.git} file. <br>
 A folder must be initiated with .git folder to work with git.
@@ -27,7 +27,7 @@ git init
 
 Once a local repo has been created, and multiple files has been added; repo need to be push to a remote server. Before that, all files must be committed and there need a reference onto which this local directory can be pushed. 
 
-**_Status of file :_**
+- **_Status of file :_**
 A file go through different stages in git. <br>
 untracked/modified (edit) ---> staged (add) ------> unchanged (commit) <br>
 
@@ -53,7 +53,7 @@ git commit -m "Message is absolute neccesity"
 add    : add specific file or all by `add .` <br>
 commit : record of changes                   <br>
 
-**_set Origin_ :**
+- **_set Origin_ :**
 There need a connection between **remote** github repository and our local **repos**. <br>
 To establish that connection, we create a remote and give it a (alias). <br>
 
@@ -69,14 +69,15 @@ git branch -M master
 `git remote -v` verifies origin fetch and push pathways (link). <br>
 `git branch` shows current working branch, `-M` to rename it.
 
-**_Clone a Repo :_**
+## Playing with Remote Repository
+- **_Clone a Repo :_**
 Instead of creating a repo from scratch on local machine, a remote repository can be cloned directly with all the above settings already intact.
 
 ```sh
 git clone <ssh_link>
 ```
 
-**_Push to remote :_**
+- **_Push to remote :_**
 Once files are commited on the local machines, we need to push them onto the remote servers. </br>
 To push our commits to the github site, `push` cmd is used.
 
@@ -89,7 +90,7 @@ git push
 All the **commits** will be push to origin (alias of the repo) in the master branch. <br>
 `-u` flag used in the first command will do the work and set an **upstream** i.e next time `git push` will be enough to push onto 'origin master' (like alias).
 
-**_Pull from remote :_**
+- **_Pull from remote :_**
 If local directory is lagging behind remote branches, run `pull` command to fetch and update local directory with ahead *branches*. 
 
 Here, pulling from master branch
@@ -97,7 +98,9 @@ Here, pulling from master branch
 git pull origin master
 ``` 
 
-**_Branches :_**
+## Collaboration Time
+
+- **_Branches :_**
 Branches help multiple collaborators to work on the same project or developing multiple features simultaneously and then **merge** them. 
 
 _Branch Commands_
@@ -123,7 +126,7 @@ Changes made in one branch will not be shared by others.
 So, whenever our feature is ready to be published as the main, current **(feature)** branch
 must be merged with the **master** branch.
 
-**_Merges and Conflicts :_**
+- **_Merges and Conflicts :_**
 There are two types of merges in git
 - Automatic Merge :: Git can automatically merge two branches into one.
 - Conflict Merge  :: When same pice of code is modified differently, a conflict occurs.
@@ -139,6 +142,7 @@ git merge <OtherBranch>
 ```
 
 
+## You Know It
 **_Basic Commands_**
 Basic terminal commands also works in git
 - **ls** : list down all
