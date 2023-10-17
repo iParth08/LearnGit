@@ -60,7 +60,7 @@ To establish that connection, we create a remote and give it a (alias). <br>
 Here [origin] is an alias for the remote repository.
 
 ```sh
-git remote add origin <LINK>
+git remote add origin <REPO_LINK>
 git remote -v 
 
 git branch
@@ -89,6 +89,21 @@ git push
 All the **commits** will be push to origin (alias of the repo) in the master branch. <br>
 `-u` flag used in the first command will do the work and set an **upstream** i.e next time `git push` will be enough to push onto 'origin master' (like alias).
 
+**_Branches :_**
+Branches help multiple collaborators to work on the same project or developing multiple features simultaneously and then **merge** them. 
+
+_Branch Commands_
+```sh
+git branch
+
+git branch -M branch_rename
+
+git checkout <branch>
+
+git checkout -b <new_branch>
+
+git branch -d <branch>
+```
 
 **_Basic Commands_**
 Basic terminal commands also works in git
