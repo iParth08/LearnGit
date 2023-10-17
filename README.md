@@ -53,7 +53,7 @@ git commit -m "Message is absolute neccesity"
 add    : add specific file or all by `add .` <br>
 commit : record of changes                   <br>
 
-### _set Origin_ :
+### _Set Origin_ :
 There need a connection between **remote** github repository and our local **repos**. <br>
 To establish that connection, we create a remote and give it a (alias). <br>
 
@@ -99,6 +99,15 @@ git pull origin master
 ``` 
 
 ## Collaboration Time
+
+### _Fork a repo_
+**Forking** other people repository means making a rough copy (branch) of their repository as our own repo on our github account.
+
+Its like fetching codes from others to modify it as our own.
+- We can edit it like our own remote repository
+- We can create multiple branches and work.
+- Later we can create a **Pull Request** to merge our branches and work to the original repository.
+
 
 ### _Branches :_
 Branches help multiple collaborators to work on the same project or developing multiple features simultaneously and then **merge** them. 
