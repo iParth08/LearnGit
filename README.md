@@ -50,11 +50,11 @@ git add .
 
 git commit -m "Message is absolute neccesity"
 ```
-add    : add specific file or all by (`add .`) <br>
+add    : add specific file or all by `add .` <br>
 commit : record of changes                   <br>
 
 **_set Origin_ :**
-There need a connection between `remote` github repository and our local `repos`. <br>
+There need a connection between **remote** github repository and our local **repos**. <br>
 To establish that connection, we create a remote and give it a (alias). <br>
 
 Here [origin] is an alias for the remote repository.
@@ -66,8 +66,8 @@ git remote -v
 git branch
 git branch -M master
 ```
-`(git remote -v)` verifies origin fetch and push pathways (link). <br>
-`(git branch)` shows current working branch, [-M] to rename it.
+`git remote -v` verifies origin fetch and push pathways (link). <br>
+`git branch` shows current working branch, `-M` to rename it.
 
 **_Clone a Repo :_**
 Instead of creating a repo from scratch on local machine, a remote repository can be cloned directly with all the above settings already intact.
@@ -82,9 +82,12 @@ To push our commits to the github site, `push` cmd is used.
 
 ```sh
 git push -u origin master
+# next time
+git push
 
 ```
 All the **commits** will be push to origin (alias of the repo) in the master branch. <br>
+`-u` flag used in the first command will do the work and set an **upstream** i.e next time `git push` will be enough to push onto 'origin master' (like alias).
 
 
 **_Basic Commands_**
