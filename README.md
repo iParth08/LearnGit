@@ -76,7 +76,7 @@ Instead of creating a repo from scratch on local machine, a remote repository ca
 git clone <ssh_link>
 ```
 
-**_Push commits :_**
+**_Push to remote :_**
 Once files are commited on the local machines, we need to push them onto the remote servers. </br>
 To push our commits to the github site, `push` cmd is used.
 
@@ -89,21 +89,51 @@ git push
 All the **commits** will be push to origin (alias of the repo) in the master branch. <br>
 `-u` flag used in the first command will do the work and set an **upstream** i.e next time `git push` will be enough to push onto 'origin master' (like alias).
 
+**_Pull from remote :_**
+If local directory is lagging behind remote branches, run `pull` command to fetch and update local directory with ahead *branches*. 
+
+Here, pulling from master branch
+```sh
+git pull origin master
+``` 
+
 **_Branches :_**
 Branches help multiple collaborators to work on the same project or developing multiple features simultaneously and then **merge** them. 
 
 _Branch Commands_
 ```sh
-git branch
+git branch          # current working branch
 
-git branch -M branch_rename
+git branch -M <branch_rename>
 
-git checkout <branch>
+git checkout <branch>   # name of branch where to go
 
 git checkout -b <new_branch>
 
-git branch -d <branch>
+git branch -d <branch>  # delete a branch from local machine
+
+# list of remote branches
+git branch -r   
 ```
+
+Once a new branch is created, it will contain all previous codes but new codes will be *exclusively* available only to the current branch.
+
+Changes made in one branch will not be shared by others. 
+
+So, whenever our feature is ready to be published as the main, current **(feature)** branch
+must be merged with the **master** branch.
+
+**_Merges and Conflicts :_**
+There are two types of merges in git
+- Automatic Merge :: Git can automatically merge two branches into one.
+- Conflict Merge  :: When same pice of code is modified differently, a conflict occurs.
+
+Conflict must be resolved **manually** for git to merge branches automatically on command.
+
+```sh
+
+```
+
 
 **_Basic Commands_**
 Basic terminal commands also works in git
