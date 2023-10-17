@@ -145,6 +145,8 @@ git merge <OtherBranch>
 
 **PULL REQUEST :** A pull request can be created on github to do the same as diff/merge.
 
+## Resolve a Mistake
+
 
 ## You Know It
 **_Basic Commands_**
