@@ -26,10 +26,27 @@ git init
 ```
 
 **_Status of file_**
+A file go through different stages in git. <br>
+
 - **U : Untracked**
+New files that git does not ye track. VSCode shows it by U / A.
 - **M : Modified**
-- **S : Staged**
-- **UM : Unmodified**
+When ever there is uncommitted change. VSCode shows it by M.
+- **Staged**
+Files added to be saved with next commit.
+- **Unmodified**
+Files not touched/mofified
+
+_To see these status and change them:_
+```sh
+git status
+
+git add <filename> //add specific
+git add .          //add all
+
+git commit -m "Message is absolute neccesity"
+```
+
 **_Basic Commands_**
 Basic terminal commands also works in git
 - **ls** : list down all
