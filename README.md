@@ -131,6 +131,10 @@ There are two types of merges in git
 Conflict must be resolved **manually** for git to merge branches automatically on command.
 
 ```sh
+#differences between working branch and OtherBranch
+git diff <OtherBranch>   
+
+git merge <OtherBranch>
 
 ```
 
