@@ -27,7 +27,7 @@ git init
 
 Once a local repo has been created, and multiple files has been added; repo need to be push to a remote server. Before that, all files must be committed and there need a reference onto which this local directory can be pushed. 
 
-## _Status of file :_
+### _Status of file :_
 A file go through different stages in git. <br>
 untracked/modified (edit) ---> staged (add) ------> unchanged (commit) <br>
 
@@ -140,6 +140,10 @@ git diff <OtherBranch>
 git merge <OtherBranch>
 
 ```
+
+**Resolving Conflicts :** Just compare two branches with diff/merge, when conflict arises choose the codes or modifications that have to be kept. Then merge again.
+
+**PULL REQUEST :** A pull request can be created on github to do the same as diff/merge.
 
 
 ## You Know It
