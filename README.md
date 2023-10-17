@@ -147,6 +147,31 @@ git merge <OtherBranch>
 
 ## Resolve a Mistake
 
+```sh
+# unstage a staged code
+git reset <filename>
+git reset
+```
+Commit has already been snapshot, to undo such commits we can go back to our previous commits. 
+
+To see all the commits `log` it.
+
+```sh
+git log
+```
+Every commit has a **hash** code and displays commit messages and author and date.
+
+```sh
+# go one commit behind
+git reset HEAD~1
+
+# reset to specific commit
+git reset <commit hash>
+
+# reset CODE too
+git reset --hard <commit hash>
+
+```
 
 ## You Know It
 **_Basic Commands_**
