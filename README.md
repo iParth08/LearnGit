@@ -145,13 +145,19 @@ git merge <OtherBranch>
 
 **PULL REQUEST :** A pull request can be created on github to do the same as diff/merge.
 
-## Resolve a Mistake
+## _Resolve a Mistake_
+Wherever we stage (`add`) a progress, it will be saved with next snapshot.
+If there is a mistake in the staged code and it should not be committed, `reset` command can ustage it for further modifications.
 
+*Once modified, it must be staged again to go for the next commit.*
 ```sh
 # unstage a staged code
 git reset <filename>
 git reset
 ```
+`git reset` will reset all current staged files. 
+
+
 Commit has already been snapshot, to undo such commits we can go back to our previous commits. 
 
 To see all the commits `log` it.
@@ -160,6 +166,7 @@ To see all the commits `log` it.
 git log
 ```
 Every commit has a **hash** code and displays commit messages and author and date.
+That hash code refers to the particular commit and it can be used to reset the **HEAD** pointer of commits queue. 
 
 ```sh
 # go one commit behind
